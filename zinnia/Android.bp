@@ -1,0 +1,35 @@
+
+cc_binary {
+    name: "test_zinnia",
+    host_supported: false,
+    srcs: [
+        "test.cpp",
+    ],
+    static_libs: [
+        "libzinnia",
+    ],
+}
+
+
+cc_library_static {
+    name: "libzinnia",
+    cflags: [
+        "-Werror",
+        "-DHAVE_CONFIG_H",
+        "-Wno-unused-parameter",
+        "-Wno-error=missing-field-initializers",
+        "-Wunused-parameter",
+    ],
+    stl: "libc++_static",
+    host_supported: false,
+    srcs: [
+        "character.cpp",
+        "feature.cpp",
+        "libzinnia.cpp",
+        "param.cpp",
+        "recognizer.cpp",
+        "sexp.cpp",
+        "svm.cpp",
+        "trainer.cpp",
+    ]
+}
