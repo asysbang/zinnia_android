@@ -10,7 +10,7 @@
 
 /* C interface  */
 #ifdef __cplusplus
-#include "../../../../../../../../../home/karl/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/cstdio"
+
 #else
 #include <stdio.h>
 #endif
